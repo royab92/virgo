@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rb.myapplication.Shop"
+    android:background="@drawable/backg"
+    >
+
+    <TextView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="7%"
+        android:layout_alignParentTop="true"
+        android:text=""
+        android:background="#651671"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        app:layout_widthPercent="8%"
+        app:layout_heightPercent="6%"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:layout_marginLeftPercent="2%"
+        app:layout_marginTopPercent="0.3%"
+        app:srcCompat="@drawable/bitcoin" />
+
+    <TextView
+        android:id="@+id/textgold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        app:layout_marginLeftPercent="13%"
+        app:layout_marginTopPercent="1%"
+        android:text=""
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="8pt"
+        />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        app:layout_widthPercent="8%"
+        app:layout_heightPercent="6%"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/star"
+        app:layout_marginLeftPercent="30%"
+        app:layout_marginTopPercent="0.5%"
+        />
+
+    <TextView
+        android:id="@+id/textstar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        app:layout_marginLeftPercent="40%"
+        app:layout_marginTopPercent="1%"
+        android:text=""
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="8pt"/>
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="8pt"
+        app:layout_marginTopPercent="1%"
+        app:layout_marginRightPercent="4%"
+        android:layout_alignParentEnd="true"
+        android:text="aaa" />
+
+    <TextView
+        android:id="@+id/part1"
+        app:layout_widthPercent="95%"
+        app:layout_heightPercent="25%"
+        android:layout_below="@+id/topbar"
+        app:layout_marginTopPercent="1%"
+      android:layout_centerHorizontal="true"
+        android:text=""
+        android:background="@drawable/parts"/>
+    <TextView
+        android:id="@+id/part2"
+        app:layout_widthPercent="95%"
+        app:layout_heightPercent="25%"
+        android:layout_below="@+id/part1"
+        app:layout_marginTopPercent="2%"
+       android:layout_centerHorizontal="true"
+        android:text=""
+        android:background="@drawable/parts"/>
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="9%"
+        android:background="@drawable/backst"
+        android:layout_alignParentBottom="true"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="7%"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:layout_marginBottomPercent="1%"
+        app:layout_marginLeftPercent="3%"
+        app:srcCompat="@drawable/setting" />
+    <TextView
+        android:id="@+id/whit2"
+        app:layout_widthPercent="17.8%"
+        app:layout_heightPercent="11%"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/profile"
+        app:layout_marginBottomPercent="1.5%"
+        />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="7%"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/manprofile"
+        app:layout_marginBottomPercent="4%"/>
+
+    <ImageView
+        android:id="@+id/imageView20"
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="7%"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:layout_marginBottomPercent="1%"
+        app:layout_marginLeftPercent="28%"
+        app:srcCompat="@drawable/ranking" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        app:layout_widthPercent="8%"
+        app:layout_heightPercent="6%"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:layout_marginBottomPercent="3%"
+        app:layout_marginRightPercent="6%"
+        app:srcCompat="@drawable/store"
+        android:clickable="true"
+        />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="7%"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:layout_marginBottomPercent="1%"
+        app:layout_marginRightPercent="26%"
+        app:srcCompat="@drawable/sales" />
+
+    <View
+        app:layout_widthPercent="0.3%"
+        app:layout_heightPercent="7%"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/White"
+        app:layout_marginBottomPercent="1%"
+        app:layout_marginLeftPercent="20%"
+        />
+    <View
+        app:layout_widthPercent="0.3%"
+        app:layout_heightPercent="7%"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/White"
+        app:layout_marginBottomPercent="1%"
+        app:layout_marginRightPercent="20%"
+        android:id="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="6pt"
+        android:layout_below="@+id/topbar"
+        app:layout_marginTopPercent="3%"
+        app:layout_marginRightPercent="9%"
+        android:layout_alignParentEnd="true"
+        android:text="خرید سکه"
+        />
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="6pt"
+        android:layout_below="@+id/part1"
+        app:layout_marginTopPercent="4%"
+        app:layout_marginRightPercent="9%"
+        android:layout_alignParentEnd="true"
+        android:text="خرید فیچرز"
+        />
+
+    <TextView
+        android:id="@+id/first"
+        app:layout_widthPercent="21%"
+        app:layout_heightPercent="16%"
+        android:layout_below="@+id/textView5"
+        app:layout_marginTopPercent="2%"
+        app:layout_marginLeftPercent="5.5%"
+        android:text="۱۵۰۰۰  سکه"
+        android:clickable="true"
+        android:gravity="top|center"
+        android:paddingTop="4dp"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="6pt"
+        android:background="@drawable/alien"/>
+    <TextView
+        android:id="@+id/second"
+        app:layout_widthPercent="21%"
+        app:layout_heightPercent="16%"
+        android:layout_below="@+id/textView5"
+        android:layout_toEndOf="@+id/first"
+        app:layout_marginTopPercent="2%"
+        app:layout_marginLeftPercent="2%"
+        android:text="۵۰۰۰  سکه"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="6pt"
+        android:gravity="top|center"
+        android:paddingTop="4dp"
+        android:background="@drawable/alien"/>
+    <TextView
+        android:id="@+id/third"
+        app:layout_widthPercent="21%"
+        app:layout_heightPercent="16%"
+        android:layout_below="@+id/textView5"
+        android:layout_toEndOf="@+id/second"
+        app:layout_marginTopPercent="2%"
+        app:layout_marginLeftPercent="2%"
+        android:text="۲۰۰۰  سکه"
+        android:clickable="true"
+        android:gravity="top|center"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="6pt"
+        android:paddingTop="4dp"
+        android:background="@drawable/alien"/>
+    <TextView
+        android:id="@+id/fourth"
+        app:layout_widthPercent="21%"
+        app:layout_heightPercent="16%"
+        android:layout_below="@+id/textView5"
+        android:layout_toEndOf="@+id/third"
+        app:layout_marginTopPercent="2%"
+        app:layout_marginLeftPercent="2%"
+        android:text="۵۰۰  سکه"
+        android:clickable="true"
+        android:gravity="top|center"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="6pt"
+        android:paddingTop="4dp"
+        android:background="@drawable/alien"/>
+    <TextView
+        android:id="@+id/firs"
+        app:layout_widthPercent="21%"
+        app:layout_heightPercent="16%"
+        android:layout_below="@+id/textView6"
+        app:layout_marginTopPercent="2%"
+        app:layout_marginLeftPercent="5.5%"
+        android:text="۱۰۰  زمان"
+        android:clickable="true"
+        android:gravity="top|center"
+        android:paddingTop="4dp"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="6pt"
+        android:background="@drawable/question"/>
+    <TextView
+        android:id="@+id/secon"
+        app:layout_widthPercent="21%"
+        app:layout_heightPercent="16%"
+        android:layout_below="@+id/textView6"
+        app:layout_marginTopPercent="2%"
+        app:layout_marginLeftPercent="2%"
+        android:layout_toEndOf="@+id/firs"
+        android:text="۵۰  زمان"
+        android:clickable="true"
+        android:gravity="top|center"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="6pt"
+        android:paddingTop="4dp"
+        android:background="@drawable/question"/>
+    <TextView
+        android:id="@+id/thir"
+        app:layout_widthPercent="21%"
+        app:layout_heightPercent="16%"
+        android:layout_below="@+id/textView6"
+        app:layout_marginTopPercent="2%"
+        app:layout_marginLeftPercent="2%"
+        android:layout_toEndOf="@+id/secon"
+        android:text="۲۰  زمان"
+        android:clickable="true"
+        android:gravity="top|center"
+        android:paddingTop="4dp"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="6pt"
+        android:background="@drawable/question"/>
+    <TextView
+        android:id="@+id/fourt"
+        app:layout_widthPercent="21%"
+        app:layout_heightPercent="16%"
+        android:layout_below="@+id/textView6"
+        android:layout_toEndOf="@+id/thir"
+        app:layout_marginTopPercent="2%"
+        app:layout_marginLeftPercent="2%"
+        android:text="۱۰  زمان"
+        android:clickable="true"
+        android:gravity="top|center"
+        android:paddingTop="4dp"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="6pt"
+        android:background="@drawable/question"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        app:layout_widthPercent="8%"
+        app:layout_heightPercent="6%"
+        android:layout_below="@+id/textView5"
+        app:layout_marginTopPercent="7%"
+        app:layout_marginLeftPercent="12%"
+        app:srcCompat="@drawable/bitcoin" />
+    <ImageView
+        android:id="@+id/imageView1"
+        app:layout_widthPercent="8%"
+        app:layout_heightPercent="6%"
+        android:layout_below="@+id/textView5"
+        android:layout_toEndOf="@+id/imageView"
+        app:layout_marginTopPercent="7%"
+        app:layout_marginLeftPercent="15%"
+        app:srcCompat="@drawable/bitcoin" />
+    <ImageView
+        android:id="@+id/imageView2"
+        app:layout_widthPercent="8%"
+        app:layout_heightPercent="6%"
+        android:layout_below="@+id/textView5"
+        android:layout_toEndOf="@+id/imageView1"
+        app:layout_marginTopPercent="7%"
+        app:layout_marginLeftPercent="15%"
+        app:srcCompat="@drawable/bitcoin" />
+    <ImageView
+        android:id="@+id/imageView3"
+        app:layout_widthPercent="8%"
+        app:layout_heightPercent="6%"
+        android:layout_below="@+id/textView5"
+        android:layout_toEndOf="@+id/imageView2"
+        app:layout_marginTopPercent="7%"
+        app:layout_marginLeftPercent="15%"
+        app:srcCompat="@drawable/bitcoin" />
+
+    <TextView
+        android:id="@+id/price1"
+        app:layout_widthPercent="20%"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/imageView"
+        app:layout_marginTopPercent="1%"
+        app:layout_marginLeftPercent="4%"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="6pt"
+        android:text="۲۴۹۰۰ تومان" />
+    <TextView
+        android:id="@+id/price2"
+        app:layout_widthPercent="20%"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        app:layout_marginTopPercent="1%"
+        android:layout_toEndOf="@+id/price1"
+        app:layout_marginLeftPercent="1.5%"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="6pt"
+        android:text="۹۰۰۰  تومان" />
+    <TextView
+        android:id="@+id/price3"
+        app:layout_widthPercent="20%"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        app:layout_marginTopPercent="1%"
+        android:layout_toEndOf="@+id/price2"
+        app:layout_marginLeftPercent="3%"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="6pt"
+        android:text="۳۸۰۰ تومان" />
+    <TextView
+        android:id="@+id/price4"
+        app:layout_widthPercent="20%"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        app:layout_marginTopPercent="1%"
+        android:layout_toEndOf="@+id/price3"
+        app:layout_marginLeftPercent="2.5%"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="6pt"
+        android:text="۱۰۰۰  تومان" />
+    <ImageView
+        android:id="@+id/imageView7"
+        app:layout_widthPercent="8%"
+        app:layout_heightPercent="6%"
+        android:layout_below="@+id/textView6"
+        app:layout_marginTopPercent="7%"
+        app:layout_marginLeftPercent="12%"
+        app:srcCompat="@drawable/time" />
+    <ImageView
+        android:id="@+id/imageView8"
+        app:layout_widthPercent="8%"
+        app:layout_heightPercent="6%"
+        android:layout_below="@+id/textView6"
+        android:layout_toEndOf="@id/imageView7"
+        app:layout_marginTopPercent="7%"
+        app:layout_marginLeftPercent="15%"
+        app:srcCompat="@drawable/time" />
+    <ImageView
+        android:id="@+id/imageView9"
+        app:layout_widthPercent="8%"
+        app:layout_heightPercent="6%"
+        android:layout_below="@+id/textView6"
+        android:layout_toEndOf="@id/imageView8"
+        app:layout_marginTopPercent="7%"
+        app:layout_marginLeftPercent="15%"
+        app:srcCompat="@drawable/time" />
+    <ImageView
+        android:id="@+id/imageView10"
+        app:layout_widthPercent="8%"
+        app:layout_heightPercent="6%"
+        android:layout_below="@+id/textView6"
+        android:layout_toEndOf="@id/imageView9"
+        app:layout_marginTopPercent="7%"
+        app:layout_marginLeftPercent="15%"
+        app:srcCompat="@drawable/time" />
+    <TextView
+        android:id="@+id/pric1"
+        app:layout_widthPercent="20%"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView7"
+        app:layout_marginTopPercent="1%"
+        app:layout_marginLeftPercent="2%"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="6pt"
+        android:text="۶۰۰  سکه" />
+    <TextView
+        android:id="@+id/pric2"
+        app:layout_widthPercent="20%"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView7"
+        android:layout_toEndOf="@+id/pric1"
+        app:layout_marginTopPercent="1%"
+        app:layout_marginLeftPercent="3.5%"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="6pt"
+        android:text="۳۵۰  سکه" />
+    <TextView
+        android:id="@+id/pric3"
+        app:layout_widthPercent="20%"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView7"
+        android:layout_toEndOf="@+id/pric2"
+        app:layout_marginTopPercent="1%"
+        app:layout_marginLeftPercent="2.5%"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="6pt"
+        android:text="۱۸۰  سکه" />
+    <TextView
+        android:id="@+id/pric4"
+        app:layout_widthPercent="20%"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView7"
+        android:layout_toEndOf="@+id/pric3"
+        app:layout_marginTopPercent="1%"
+        app:layout_marginLeftPercent="2.5%"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="6pt"
+        android:text="۱۰۰  سکه" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:layout_marginRightPercent="5%"
+        android:text="فروشگاه" />
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_setting"
+        android:icon="@drawable/setting"
+        android:title="پیکربندی"
+        />
+
+    <item
+        android:id="@+id/navigation_ranking"
+        android:icon="@drawable/ranking"
+        android:title="برترین ها"
+        />
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home"
+        android:title=""
+        />
+
+    <item
+        android:id="@+id/navigation_sale"
+        android:icon="@drawable/sales"
+        android:title="مبادله"/>
+    <item
+        android:id="@+id/navigation_shop"
+        android:icon="@drawable/store"
+        android:title="فروشگاه"/>
+</menu>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rb.myapplication.Waiting"
+    android:id="@+id/wait"
+    android:alpha="0.5"
+    android:background="@drawable/activation"
+    >
+
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:indeterminateTint="@color/lpurple"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="20%"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        app:layout_marginTopPercent="30%"/>
+    <TextView
+        android:id="@+id/exp"
+        android:layout_width="wrap_content"
+        app:layout_heightPercent="7%"
+        android:layout_below="@+id/progressBar2"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="5%"
+        android:textColor="@color/White"
+        android:text="لطفا چند لحظه منتظر بمانید..."
+        android:textSize="10pt"
+        />
+</android.support.percent.PercentRelativeLayout>

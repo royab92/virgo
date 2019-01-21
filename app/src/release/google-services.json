@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "944385536712",
+    "firebase_url": "https://virgo-2aeff.firebaseio.com",
+    "project_id": "virgo-2aeff",
+    "storage_bucket": "virgo-2aeff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944385536712:android:cacba728f4863f6b",
+        "android_client_info": {
+          "package_name": "com.example.rb.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944385536712-kimmj57prldltp944nhu81bj2ovncda4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rb.myapplication",
+            "certificate_hash": "2a96bf62f543e09d6d30acbcc8aaec5b226dbe06"
+          }
+        },
+        {
+          "client_id": "944385536712-kjb4n6blvura89pmurs40dtf1dg05avb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbv92LrzkLHUU8SSQTEgZpXIYaEP-vswk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944385536712-kjb4n6blvura89pmurs40dtf1dg05avb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

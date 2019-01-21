@@ -1,0 +1,114 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword 'roya92'
+            storeFile file('/Users/bahrampashootan/AndroidStudioProjects/virgo1')
+            storePassword 'roya92'
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion '28.0.2'
+    defaultConfig {
+        applicationId "com.example.rb.myapplication"
+        minSdkVersion 21
+        targetSdkVersion 26
+        ndk {
+            abiFilters 'armeabi-v7a', 'x86'
+        }
+
+        versionCode 1
+        versionName "1.6.7"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
+    }
+    lintOptions {
+        disable 'RestrictedApi'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+    packagingOptions {
+        doNotStrip '*/armeabi-v7a/*.so'
+        doNotStrip '*/x86/*.so'
+    }
+
+
+    aaptOptions {
+        noCompress '.unity3d', '.ress', '.resource', '.obb', 'vuforia/vuforiamars_images.dat', 'vuforia/vuforiamars_images.xml', 'vuforia/vuforiamars_modeltarget.dat', 'vuforia/vuforiamars_modeltarget.xml', 'vuforia/vuforiamars_object_ot.dat', 'vuforia/vuforiamars_object_ot.xml', 'vuforia/vuforiamars_vumark.dat', 'vuforia/vuforiamars_vumark.xml'
+    }
+
+
+   /* jar {
+        manifest {
+            attributes "Main-Class": "com.example.rb.myapplication.Aliens"
+        }
+
+        from {
+            configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+        }
+    }*/
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    // androidTestimplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+    // exclude group: 'com.android.support', module: 'support-annotations'
+    //  })
+    implementation 'com.android.support:appcompat-v7:26.0.0'
+    //implementation 'com.android.support:animated-vector-drawable:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
+    implementation(name: 'VuforiaWrapper', ext: 'aar')
+    //implementation project(':unity-classes')
+    //implementation 'com.github.adhishlal:gifloader:1.1'
+    implementation 'com.android.support:percent:26.0.0'
+
+    implementation 'com.google.android.gms:play-services-maps:11.0.4'
+    implementation 'com.android.support:design:26.0.0'
+    implementation 'com.android.volley:volley:1.1.0'
+
+    implementation 'com.google.firebase:firebase-crash:11.0.4'
+    implementation 'com.google.firebase:firebase-core:11.0.4'
+    implementation 'com.google.firebase:firebase-messaging:11.0.4'
+    implementation 'com.google.android.gms:play-services-location:11.0.4'
+    // implementation 'com.wonderkiln:blurkit:1.0.0'
+    implementation 'com.google.code.gson:gson:2.8.4'
+    implementation 'com.github.erizet.signala:signala-longpolling:0.20'
+    implementation 'com.github.piruin:quickaction:2.3'
+    implementation 'com.android.support:support-v4:26.0.0'
+    implementation 'com.mohamadamin:persianmaterialdatetimepicker:1.2.1'
+    //implementation 'com.github.amlcurran.showcaseview:library:5.4.3'
+    implementation 'com.github.deano2390:MaterialShowcaseView:1.2.0'
+    testImplementation 'junit:junit:4.12'
+}
+
+
+
+
+
+/*task deleteOldJar(type: Delete) {
+    //delete 'libs/AndroidPlugin.jar'
+    delete 'release/AndroidPlugin.jar'
+}
+task exportJar(type: Copy) {
+    //from('build/intermediates/bundles/release/')
+   // into('libs/')
+    from('build/intermediates/classes/release/com/example/rb/myapplication/')
+    into('release/')
+    include('Aliens.jar')
+    ///Rename the jar
+    rename('Aliens.jar', 'AndroidPlugin.jar')
+    exportJar.dependsOn(deleteOldJar, build)
+}*/
+apply plugin: 'com.google.gms.google-services'

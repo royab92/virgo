@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg">
+    <TextView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="6%"
+        android:layout_alignParentTop="true"
+        android:text="با تجربه ترین ها"
+        android:textColor="@color/White"
+        android:gravity="right|center_vertical"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:paddingRight="10dp"
+        android:background="#651671"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs2"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="6%"
+        android:layout_below="@+id/topbar"
+        app:layout_marginTopPercent="3%"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabBackground="@drawable/tab_color_selector"
+        app:tabTextColor="#80FFFFFF"
+        app:tabSelectedTextColor="@color/White"
+        app:tabIndicatorColor="@android:color/white"
+        app:tabTextAppearance="@style/TabLayoutStyle"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager2"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tabs2"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</android.support.percent.PercentRelativeLayout>

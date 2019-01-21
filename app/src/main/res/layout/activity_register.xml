@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rb.myapplication.Register"
+    android:background="@drawable/register">
+
+
+
+    <EditText
+        android:id="@+id/editText"
+        app:layout_widthPercent="53%"
+       app:layout_heightPercent="7%"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView13"
+        app:layout_marginTopPercent="3%"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:ems="11"
+        android:textColor="@color/lpurple"
+        android:hint="شماره موبایل"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="8pt"
+        android:lines="1"
+        android:background="@drawable/editt"
+        android:alpha="0.8"
+        />
+
+    <Button
+        android:id="@+id/button"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="7%"
+        android:text="تایید"
+        app:layout_marginTopPercent="13%"
+        android:background="@drawable/button"
+        android:textColor="@color/White"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:onClick="Confirm"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+         />
+
+    <TextView
+        android:id="@+id/textView13"
+        app:layout_widthPercent="88%"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="5%"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="جهت نام نویسی شماره خود را وارد کنید."
+        android:textColor="@color/White"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        app:layout_widthPercent="85%"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button"
+        app:layout_marginTopPercent="5%"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        android:text="یک کد شناسایی برایتان پیامک می شود، آن را در مرحله بعد وارد کنید."
+        android:textColor="@color/White"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/moaref"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="7%"
+        android:layout_below="@+id/textView14"
+        android:layout_centerHorizontal="true"
+       app:layout_marginTopPercent="3%"
+        android:text=""
+        android:hint="شماره موبایل معرف"
+        android:inputType="phone"
+        android:ems="11"
+        android:textColor="@color/lpurple"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="8pt"
+        android:lines="1"
+        android:background="@drawable/editt"
+        android:alpha="0.8"
+        />
+    <ImageView
+        android:id="@+id/manp"
+        app:layout_widthPercent="54%"
+        app:layout_heightPercent="8%"
+        app:layout_marginLeftPercent="10%"
+        app:layout_marginTopPercent="3%"
+        android:layout_below="@+id/editText"
+        android:src="@drawable/manp"
+        android:clickable="true"
+        android:onClick="Clickman"
+        />
+
+    <ImageView
+        android:id="@+id/womanp"
+        app:layout_widthPercent="12%"
+        app:layout_heightPercent="8%"
+        app:layout_marginLeftPercent="57%"
+        android:layout_below="@+id/editText"
+        app:layout_marginTopPercent="3%"
+        android:src="@drawable/womanp"
+        android:clickable="true"
+        android:onClick="Clickwoman"
+        />
+    <ImageView
+        android:id="@+id/mtik"
+        app:layout_widthPercent="5%"
+        app:layout_heightPercent="5%"
+        app:layout_marginTopPercent="3%"
+        android:layout_alignParentStart="true"
+        app:layout_marginLeftPercent="40%"
+        android:layout_below="@+id/editText"
+        app:srcCompat="@drawable/tik" />
+    <ImageView
+        android:id="@+id/wtik"
+        app:layout_widthPercent="5%"
+        app:layout_heightPercent="5%"
+        android:layout_alignParentStart="true"
+        app:layout_marginTopPercent="3%"
+        app:layout_marginLeftPercent="66%"
+        android:layout_below="@+id/editText"
+        app:srcCompat="@drawable/tik" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editText"
+        app:layout_marginTopPercent="5%"
+        android:text="یا"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="8pt"
+        android:textColor="@color/White"
+        />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="5%"
+        android:layout_below="@+id/editText"
+        app:layout_marginLeftPercent="22%"
+        android:text="مرد"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="8pt"
+        android:textColor="@color/White"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_marginLeftPercent="72%"
+        android:textAlignment="center"
+        android:layout_below="@+id/editText"
+        app:layout_marginTopPercent="5%"
+        android:textSize="8pt"
+        android:textColor="@color/White"
+        android:text="زن" />
+
+</android.support.percent.PercentRelativeLayout>
+

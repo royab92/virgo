@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content"
+    tools:context="com.example.rb.myapplication.Activation"
+    android:background="@drawable/activation">
+
+    <EditText
+        android:id="@+id/activation"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="7%"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView15"
+        app:layout_marginTopPercent="3%"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="_ _ _ _ _"
+        android:textColor="@color/lpurple"
+        android:textAlignment="center"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        android:background="@drawable/editt"
+        android:alpha="0.8"
+        />
+
+
+    <TextView
+        android:id="@+id/textView"
+        app:layout_widthPercent="80%"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/load"
+        app:layout_marginTopPercent="1%"
+        android:layout_centerHorizontal="true"
+        android:text="کد شناسایی به دستتان نرسید؟"
+        android:textColor="@color/White"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="10%"
+        android:textSize="8pt"
+        android:textColor="@color/White"
+        android:text="کد شناسایی را وارد کنید."
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/retry"
+        app:layout_widthPercent="60%"
+        app:layout_heightPercent="7%"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView"
+        android:text="نه، دوباره بفرست."
+        android:background="@drawable/button"
+        android:textColor="@color/White"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:enabled="false"
+        android:alpha="0.5"
+        android:onClick="Retry"
+        app:layout_marginTopPercent="3%"/>
+    <ProgressBar
+        android:id="@+id/load"
+        style="?android:attr/progressBarStyleHorizontal"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="20%"
+        android:layout_below="@+id/activation"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="1%"
+        android:indeterminate="false"
+        android:max="60"
+        android:secondaryProgress="60"
+        android:progressDrawable="@drawable/circular"
+        />
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="@color/White"
+        android:textSize="6pt"
+        android:layout_below="@+id/activation"
+        app:layout_marginTopPercent="9%"/>
+
+</android.support.percent.PercentRelativeLayout>
+

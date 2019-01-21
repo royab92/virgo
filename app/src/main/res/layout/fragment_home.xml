@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg">
+
+    <TextView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="7%"
+        android:layout_alignParentTop="true"
+        android:text=""
+        android:background="#651671"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        app:layout_widthPercent="8%"
+        app:layout_heightPercent="6%"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:layout_marginLeftPercent="2%"
+        app:layout_marginTopPercent="0.3%"
+        app:srcCompat="@drawable/bitcoin" />
+
+    <TextView
+        android:id="@+id/textgold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        app:layout_marginLeftPercent="13%"
+        app:layout_marginTopPercent="1%"
+        android:text=""
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="8pt"
+        />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        app:layout_widthPercent="8%"
+        app:layout_heightPercent="6%"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/star"
+        app:layout_marginLeftPercent="30%"
+        app:layout_marginTopPercent="0.5%"
+        />
+
+    <TextView
+        android:id="@+id/textstar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        app:layout_marginLeftPercent="40%"
+        app:layout_marginTopPercent="1%"
+        android:text=""
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="8pt"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="8pt"
+        app:layout_marginTopPercent="1%"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/whit"
+        app:layout_widthPercent="36%"
+        app:layout_heightPercent="22%"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="2%"
+        android:background="@drawable/profile"
+        />
+    <ImageView
+        android:id="@+id/propic"
+        app:layout_widthPercent="22.5%"
+        app:layout_heightPercent="17.5%"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="3%"
+        app:srcCompat="@drawable/man"
+        />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        app:layout_widthPercent="12%"
+        app:layout_heightPercent="8%"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="20.3%"
+        app:srcCompat="@drawable/expstar" />
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="22%"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="8pt"
+        android:text="" />
+
+
+
+    <View
+        app:layout_widthPercent="0.3%"
+        app:layout_heightPercent="7%"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/White"
+        app:layout_marginBottomPercent="1%"
+        app:layout_marginLeftPercent="20%"
+        />
+    <View
+        app:layout_widthPercent="0.3%"
+        app:layout_heightPercent="7%"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/White"
+        app:layout_marginBottomPercent="1%"
+        app:layout_marginRightPercent="20%"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="?android:attr/progressBarStyleHorizontal"
+        app:layout_widthPercent="60%"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="0.5%"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/horizentalp"
+        android:layout_below="@+id/imageView16"
+        />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="7%"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/progressBar4"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="3.2%"
+        app:srcCompat="@drawable/guard" />
+    <TextView
+        android:id="@+id/guard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="8pt"
+        android:layout_below="@+id/imageView23"
+        android:layout_alignParentStart="true"
+        app:layout_marginLeftPercent="7.5%"
+        app:layout_marginTopPercent="0.6%"
+        />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        app:layout_widthPercent="11%"
+        app:layout_heightPercent="8%"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/progressBar4"
+        app:layout_marginLeftPercent="22%"
+        app:layout_marginTopPercent="2.3%"
+        app:srcCompat="@drawable/bomb" />
+    <TextView
+        android:id="@+id/bomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="8pt"
+        android:layout_below="@+id/imageView24"
+        android:layout_alignParentStart="true"
+        app:layout_marginLeftPercent="23.7%"
+        app:layout_marginTopPercent="0.6%"
+        />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="7%"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/progressBar4"
+        app:layout_marginLeftPercent="39%"
+        app:layout_marginTopPercent="3.4%"
+        app:srcCompat="@drawable/life" />
+    <TextView
+        android:id="@+id/life"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="8pt"
+        android:layout_below="@+id/imageView25"
+        android:layout_alignParentStart="true"
+        app:layout_marginLeftPercent="42.4%"
+        app:layout_marginTopPercent="0.6%"
+        />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        app:layout_widthPercent="11%"
+        app:layout_heightPercent="7.5%"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/progressBar4"
+        app:layout_marginRightPercent="34.7%"
+        app:layout_marginTopPercent="2.8%"
+        app:srcCompat="@drawable/amordad" />
+    <TextView
+        android:id="@+id/amordad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="8pt"
+        android:layout_below="@+id/imageView26"
+        android:layout_alignParentEnd="true"
+        app:layout_marginRightPercent="38.3%"
+        app:layout_marginTopPercent="0.8%"
+        />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="7%"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/progressBar4"
+        app:layout_marginRightPercent="19.5%"
+        app:layout_marginTopPercent="3.7%"
+        app:srcCompat="@drawable/x" />
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="8pt"
+        android:layout_below="@+id/imageView27"
+        android:layout_alignParentEnd="true"
+        app:layout_marginRightPercent="22.3%"
+        app:layout_marginTopPercent="0.4%"
+        />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="7%"
+        android:layout_below="@+id/progressBar4"
+        android:layout_alignParentEnd="true"
+        app:layout_marginTopPercent="3.3%"
+        app:layout_marginRightPercent="5%"
+        app:srcCompat="@drawable/time" />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="8pt"
+        android:layout_below="@+id/imageView28"
+        android:layout_alignParentEnd="true"
+        app:layout_marginRightPercent="8.3%"
+        app:layout_marginTopPercent="0.8%"
+        />
+
+    <TextView
+        android:id="@+id/questions"
+        app:layout_widthPercent="35%"
+        app:layout_heightPercent="12%"
+        android:layout_below="@+id/guard"
+        android:layout_alignParentStart="true"
+        app:layout_marginTopPercent="1%"
+        app:layout_marginLeftPercent="2%"
+        android:text="یافتن پرسش ها"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="8pt"
+        android:gravity="bottom|center"
+        android:clickable="true"
+        android:background="@drawable/alien"
+        android:paddingBottom="2dp"
+        android:onClick="Clickquestion"
+        />
+
+    <TextView
+        android:id="@+id/mapsearch"
+        app:layout_widthPercent="35%"
+        app:layout_heightPercent="12%"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="8pt"
+        android:layout_below="@+id/guard"
+        android:layout_alignParentEnd="true"
+        app:layout_marginTopPercent="1%"
+        app:layout_marginRightPercent="2%"
+        android:gravity="bottom|center"
+        android:text="جستجو در نقشه"
+        android:clickable="true"
+        android:background="@drawable/alien"
+        android:paddingBottom="2dp"
+        android:onClick="Clickmap"/>
+    <TextView
+        android:id="@+id/features"
+        app:layout_widthPercent="35%"
+        app:layout_heightPercent="12%"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="8pt"
+        android:layout_below="@+id/questions"
+        android:layout_alignParentStart="true"
+        app:layout_marginTopPercent="2%"
+        app:layout_marginLeftPercent="2%"
+        android:gravity="bottom|center"
+        android:text="یافتن فیچرزها"
+        android:clickable="true"
+        android:background="@drawable/alien"
+        android:paddingBottom="2dp"
+        android:onClick="ClickFeature"
+        />
+    <TextView
+        android:id="@+id/aliens"
+        app:layout_widthPercent="35%"
+        app:layout_heightPercent="12%"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:textSize="8pt"
+        android:layout_below="@+id/mapsearch"
+        android:layout_alignParentEnd="true"
+        app:layout_marginTopPercent="2%"
+        app:layout_marginRightPercent="2%"
+        android:gravity="bottom|center"
+        android:text="یافتن بیگانگان"
+        android:clickable="true"
+        android:background="@drawable/alien"
+        android:paddingBottom="2dp"
+        android:onClick="Clickalien"/>
+
+    <ImageView
+        android:id="@+id/imageView29"
+        app:layout_widthPercent="9%"
+        app:layout_heightPercent="6%"
+        android:layout_below="@+id/questions"
+        app:srcCompat="@drawable/features"
+        android:layout_alignParentStart="true"
+        app:layout_marginTopPercent="3.5%"
+        app:layout_marginLeftPercent="15.4%"/>
+
+    <ImageView
+        android:id="@+id/imageView30"
+        app:layout_widthPercent="12%"
+        app:layout_heightPercent="9%"
+        android:layout_below="@+id/mapsearch"
+        android:layout_alignParentEnd="true"
+        app:layout_marginTopPercent="2%"
+        app:layout_marginRightPercent="12.1%"
+        app:srcCompat="@drawable/monster" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        app:layout_widthPercent="11%"
+        app:layout_heightPercent="8%"
+        android:layout_below="@+id/guard"
+        android:layout_alignParentStart="true"
+        app:layout_marginTopPercent="1.5%"
+        app:layout_marginLeftPercent="14.5%"
+        app:srcCompat="@drawable/questions" />
+
+    <ImageView
+        android:id="@+id/imageView32"
+        app:layout_widthPercent="17%"
+        app:layout_heightPercent="15%"
+        android:layout_below="@+id/imageView28"
+        android:layout_alignParentEnd="true"
+        app:layout_marginTopPercent="3.5%"
+        app:layout_marginRightPercent="10.5%"
+        app:srcCompat="@drawable/map" />
+
+    <TextView
+        android:id="@+id/textprogress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        app:layout_marginRightPercent="23%"
+        app:layout_marginTopPercent="41%"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="6pt"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:id="@+id/btnm"
+        app:layout_widthPercent="11%"
+        app:layout_heightPercent="7%"
+        android:layout_below="@+id/topbar"
+        app:layout_marginTopPercent="3%"
+        app:layout_marginEndPercent="7%"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/plus"
+        android:clickable="true"
+        android:onClick="Clickmenu"
+        />
+
+    <TextView
+        android:id="@+id/qnum"
+        app:layout_widthPercent="5.5%"
+        app:layout_heightPercent="3.5%"
+        android:layout_below="@+id/topbar"
+        app:layout_marginTopPercent="2.5%"
+        app:layout_marginEndPercent="4%"
+        android:layout_alignParentEnd="true"
+        android:text="5"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:textSize="6pt"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@drawable/number" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="" />
+</android.support.percent.PercentRelativeLayout>

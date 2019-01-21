@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rb.myapplication.About"
+    android:background="@color/White"
+    >
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="10%"
+        android:text="درباره ما"
+        android:textStyle="bold"
+        android:textColor="@color/dpurple"
+        android:textSize="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        app:layout_widthPercent="85%"
+        app:layout_heightPercent="55%"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView2"
+        app:layout_marginTopPercent="5%">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/matn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" تجسم کنید با خانواده به پارک می روید و با آن ها در محیط پارک با موبایل به یک بازی ماجراجویانه می پردازید، مادر چای می ریزد، پدر مشغول صحبت کردن با مادر است، شما و خواهرتان از طریق نقشه راهنما در محیط پارک در جستجوی گنج های پنهان شده هستید. حال یک گنج را پیدا می کنید اما برای باز کردن قفل آن نیاز است تا یک معما را پاسخ دهید و در ضمن افراد دیگری هم در همان زمان در حال پیدا کردن پاسخ معما هستند و هر تیمی که زودتر پاسخ را پیدا کند گنج را بدست می آورد، و هر کس تنها یک بار شانس پاسخ دادن دارد...به سمت پدر و مادر می روید تا از آن ها برای یافتن پاسخ معما کمک بگیرید، باید سریع باشید چون امکان دارد بقیه تیم ها جواب را زودتر از شما پیدا کنند...نهایتا خانواده شما پاسخ معما را پیدا می کند...شما گنج را از آن خود کرده اید، گنج یک شام فوق العاده با قیمتی بسیار کم در یک رستوران خوب است که لذت این شب شما را چندین برابر می کند. چند لحظه صبر کنید...یک خانواده دیگر در گوشه ای دیگر از پارک گنج دیگری پیدا کرده است...۴ بلیط رایگان برای سینما ۴بعدی...یکی دیگر هم گنج بلیط پارک دلفین ها را پیدا کرده است...همفکری و همکاری همه اعضای تیم همیشه نتیجه مطلوب تری دارد...
+
+                 \nاین خلاصه ای از پروژه تیم سیمرغ بود که نسخه آزمایشی آن هم اکنون در دستان شماست...تیم ما از سال ۱۳۹۶ فعالیت خود را در جهت ساخت مجموعه ای از بازی ها جدید و ایرانی موبایل شروع کرده است، مجموعه ای که افراد با بازی های آن از بازی کردن در کنار اعضای خانواده و دوستان لذت خواهند برد. اولین محصول این تیم حمله وروجک هاست که نسخه آزمایشی آن جهت تست و ارزیابی منتشر شده است. اساس این بازی تقویت مهارت های جهت یابی و تیزبینی کاربر و سنجش میزان هوش و دانش کاربران است.
+                \nاز شما کاربر گرامی برای وقتی که برای تست نسخه آزمایشی و راهنمایی ما در جهت بهبود آن گذاشتید صمیمانه سپاسگزاریم. "
+                android:textColor="@color/dpurple"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:lineSpacingExtra="3dp"
+                />
+        </android.support.percent.PercentRelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/pingi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        app:srcCompat="@drawable/ping"
+        />
+    <ImageView
+        android:id="@+id/telegram"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/telegram"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="Clicktele"
+        android:tag="https://t.me/baziigram"
+        android:clickable="true"/>
+    <ImageView
+        android:id="@+id/instagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/instagram"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:layout_marginRightPercent="25%"
+        android:onClick="Clickinsta"
+        android:tag="https://www.instagram.com/baziigram"
+        android:clickable="true"/>
+
+    <ImageView
+        android:id="@+id/web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/website"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:layout_marginRightPercent="45%"
+        android:onClick="Clickweb"
+        android:clickable="true"
+        android:tag=""
+        />
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rb.myapplication.Main2Activity"
+    android:background="@drawable/backg"
+    android:id="@+id/main">
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="9.5%"
+        android:background="@drawable/backst"
+       android:layout_alignParentBottom="true"
+        app:itemTextColor="@color/White"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/navigation"
+        />
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg">
+    <TextView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="6%"
+        android:layout_alignParentTop="true"
+        android:text="پیکربندی"
+        android:textColor="@color/White"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:background="#651671"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        app:layout_heightPercent="85%"
+        android:layout_below="@+id/topbar"
+        >
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/layer1"
+                android:layout_width="match_parent"
+                app:layout_heightPercent="6%"
+                android:layout_alignParentStart="true"
+                app:layout_marginTopPercent="2%"
+                android:text="صدا"
+                android:background="@color/violet"
+                android:textColor="@color/White"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:gravity="center_vertical|right"
+                android:paddingRight="12dp"/>
+
+            <TextView
+                android:id="@+id/layer2"
+                android:layout_width="match_parent"
+                app:layout_heightPercent="8%"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/layer1"
+                android:text="صدای بازی"
+                android:background="#80651671"
+                android:textColor="@color/White"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:gravity="center_vertical|right"
+                android:paddingRight="12dp"/>
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/layer1"
+                app:layout_marginTopPercent="1.5%"
+                app:layout_marginLeftPercent="10%"
+                android:theme="@style/SwitchCompatTheme"
+                android:text=""
+                android:checked="false"
+                android:onClick="Clickswitch"
+                />
+
+            <TextView
+                android:id="@+id/layer3"
+                android:layout_width="match_parent"
+                app:layout_heightPercent="6%"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/layer2"
+                app:layout_marginTopPercent="2%"
+                android:text="پروفایل"
+                android:background="@color/violet"
+                android:textColor="@color/White"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:gravity="center_vertical|right"
+                android:paddingRight="12dp"/>
+            <TextView
+                android:id="@+id/layer4"
+                android:layout_width="match_parent"
+                app:layout_heightPercent="43%"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/layer3"
+                android:text="جنسیت"
+                android:background="#80651671"
+                android:textColor="@color/White"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:gravity="top|right"
+                android:paddingTop="10dp"
+                android:paddingRight="12dp"/>
+            <TextView
+                android:id="@+id/layer5"
+                android:layout_width="match_parent"
+                app:layout_heightPercent="6%"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/layer4"
+                app:layout_marginTopPercent="2%"
+                android:text="اطلاعات"
+                android:background="@color/violet"
+                android:textColor="@color/White"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:gravity="center_vertical|right"
+                android:paddingRight="12dp"/>
+            <TextView
+                android:id="@+id/layer6"
+                android:layout_width="match_parent"
+                app:layout_heightPercent="23%"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/layer5"
+                android:text=""
+                android:background="#80651671"
+                />
+            <TextView
+                android:id="@+id/layer7"
+                android:layout_width="match_parent"
+                app:layout_heightPercent="6%"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/layer6"
+                android:text="نسخه بازی"
+                android:background="@color/violet"
+                android:textColor="@color/White"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:gravity="center_vertical|right"
+                android:paddingRight="12dp"/>
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layer6"
+                app:layout_marginLeftPercent="5%"
+                app:layout_marginTopPercent="1.2%"
+                android:text="V1.1.1"
+                android:textColor="@color/White"
+                android:textSize="7pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/story"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/layer5"
+                app:layout_marginRightPercent="5%"
+                app:layout_marginTopPercent="2%"
+                android:text="داستان بازی"
+                android:textColor="@color/White"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="Clickhelp"/>
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/story"
+                android:layout_alignParentEnd="true"
+                app:layout_marginRightPercent="5%"
+                app:layout_marginTopPercent="2%"
+                android:textColor="@color/White"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:text="درباره ققنوس"
+                android:clickable="true"
+                android:onClick="Clickabout"/>
+
+            <ImageView
+                android:id="@+id/manp"
+                app:layout_widthPercent="12%"
+                app:layout_heightPercent="8%"
+                app:layout_marginLeftPercent="7%"
+                app:layout_marginTopPercent="0.5%"
+                android:layout_below="@+id/layer3"
+                android:src="@drawable/manp"
+                android:clickable="true"
+                android:onClick="Clickman"
+                />
+
+            <ImageView
+                android:id="@+id/womanp"
+                app:layout_widthPercent="12%"
+                app:layout_heightPercent="8%"
+                app:layout_marginLeftPercent="27%"
+                android:layout_below="@+id/layer3"
+                app:layout_marginTopPercent="0.5%"
+                android:src="@drawable/womanp"
+                android:clickable="true"
+                android:onClick="Clickwoman"
+                />
+
+            <Button
+                android:id="@+id/button2"
+                app:layout_widthPercent="60%"
+                app:layout_heightPercent="6%"
+                android:layout_below="@+id/layer3"
+                app:layout_marginTopPercent="33.5%"
+                android:layout_centerHorizontal="true"
+                android:text="ذخیره اطلاعات"
+                android:background="@drawable/qr"
+                android:backgroundTint="@color/pink"
+                android:textColor="@color/White"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:onClick="Clicksave"/>
+
+            <ImageView
+                android:id="@+id/mtik"
+                app:layout_widthPercent="5%"
+                app:layout_heightPercent="5%"
+                android:layout_alignParentStart="true"
+                app:layout_marginLeftPercent="16%"
+                android:layout_below="@+id/layer3"
+                app:layout_marginTopPercent="0.5%"
+                app:srcCompat="@drawable/tik" />
+            <ImageView
+                android:id="@+id/wtik"
+                app:layout_widthPercent="5%"
+                app:layout_heightPercent="5%"
+                android:layout_alignParentStart="true"
+                app:layout_marginLeftPercent="36%"
+                android:layout_below="@+id/layer3"
+                app:layout_marginTopPercent="0.5%"
+                app:srcCompat="@drawable/tik" />
+
+            <TextView
+                android:id="@+id/usern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                app:layout_marginTopPercent="0.5%"
+                app:layout_marginRightPercent="5%"
+                android:layout_below="@+id/womanp"
+                android:text="نام کاربری"
+                android:textColor="@color/White"
+                android:textSize="6pt"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editText2"
+                app:layout_widthPercent="82%"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/usern"
+                app:layout_marginRightPercent="9%"
+                android:inputType="textPersonName"
+                android:layout_alignParentEnd="true"
+                android:hint="کاربر مهمان"
+                android:textColor="@color/White"
+                android:textSize="6pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                app:layout_marginTopPercent="11%"
+                app:layout_marginRightPercent="5%"
+                android:layout_below="@+id/womanp"
+                android:text="تاریخ تولد"
+                android:textColor="@color/White"
+                android:textSize="6pt"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/editText3"
+                app:layout_widthPercent="82%"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView19"
+                app:layout_marginRightPercent="9%"
+                android:layout_alignParentEnd="true"
+                android:hint="20/10/1368"
+                android:gravity="right"
+                android:textColor="@color/White"
+                android:textSize="6pt"
+                android:textStyle="bold"
+                android:editable="false"
+
+                />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/about"
+                android:layout_alignParentEnd="true"
+                app:layout_marginRightPercent="5%"
+                app:layout_marginTopPercent="2%"
+                android:textColor="@color/White"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:text="معرفی به دوستان"
+                android:clickable="true"
+                android:onClick="Clickintro"/>
+
+            <Button
+                android:id="@+id/button3"
+                app:layout_widthPercent="35%"
+                app:layout_heightPercent="6%"
+                android:layout_below="@+id/textView19"
+
+                app:layout_marginStartPercent="10%"
+                android:layout_alignParentStart="true"
+                android:text="انتخاب نمایید"
+                android:background="@drawable/qr"
+                android:backgroundTint="@color/pink"
+                android:textColor="@color/White"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:onClick="Clickdate" />
+
+        </android.support.percent.PercentRelativeLayout>
+    </ScrollView>
+
+</android.support.percent.PercentRelativeLayout>
